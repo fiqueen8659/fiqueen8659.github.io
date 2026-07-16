@@ -45,19 +45,19 @@ window.RESEARCH_TOPICS = [
       "Shadow matching",
       "Likelihood scoring",
     ],
-    related: ["research/urban-gnss", "research/factor-graph-optimization"],
+    related: ["research/urban-gnss", "research/ai-ml-gnss"],
   },
   {
-    slug: "factor-graph-optimization",
-    title: "Factor Graph Optimization",
+    slug: "ai-ml-gnss",
+    title: "AI/ML GNSS",
     label: "MULTI-SENSOR ESTIMATION",
     summary:
-      "Representing navigation measurements and constraints as a graph for robust state estimation.",
-    tags: ["FGO", "sensor fusion", "state estimation", "optimization"],
+      "Utilising the innovations of artificial intelligence (AI) and machine learning (ML) for accurate and precise positioning",
+    tags: ["AI", "ML", "state estimation", "optimization"],
     overview:
-      "Factor Graph Optimization represents states as variables and measurements as factors. This makes relationships between GNSS, inertial, motion, and environmental constraints explicit.",
+      "Through the use of existing methods such as vision-language-model (VLM) and machine learning for multipath detection (Hsu, 2017)",
     challenge:
-      "Navigation systems combine measurements with different rates, uncertainties, and failure modes. The estimation framework must remain understandable, extensible, and computationally manageable.",
+      "Navigation systems combine measurements with different rates, uncertainties, and failure modes. This model must remain computationally effective as well as effective for precise positioning in urban canyons",
     methods: [
       "State variables",
       "Measurement factors",
@@ -83,7 +83,7 @@ window.RESEARCH_TOPICS = [
       "GNSS/INS concepts",
       "Quality control",
     ],
-    related: ["research/factor-graph-optimization", "research/robotics"],
+    related: ["research/ai-ml-gnss", "research/robotics"],
   },
   {
     slug: "intelligent-transport",
