@@ -10,6 +10,8 @@ Research and project listings link to data-driven bilingual subpages. Their cont
 
 Edit `assets/js/site-config.js` to change the shared name, initials, email, social links, bilingual tagline, and brand colours. See `CONFIGURE.md` for the complete guide.
 
+Start with `EDIT-HERE.md`. Routine edits are English-only; the live Traditional Chinese view is generated automatically.
+
 ## Publish
 
 1. Create a public repository named `blxchen.github.io`.

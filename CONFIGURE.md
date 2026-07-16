@@ -4,6 +4,8 @@ Most site-wide changes require editing only:
 
 `assets/js/site-config.js`
 
+For the simplest workflow, read `EDIT-HERE.md`. With `autoTranslateChinese: true`, maintain English only; the live Chinese view is generated automatically.
+
 ## Change identity and links
 
 Edit the values for `name`, `initials`, `email`, `linkedin`, `orcid`, and `siteUrl`.
