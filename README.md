@@ -2,7 +2,7 @@
 
 A responsive bilingual, multi-page personal research website using the source design system of IPNL/qmohsu.github.io: Fraunces, Mulish and IBM Plex Mono; warm ivory, ultramarine, vermilion and dark indigo.
 
-Pages: Home, About, Research, Projects, and Contact. Each page has a matching Traditional Chinese version in `zh-tw/`.
+Pages: Home, About, Research, Projects, Portfolio, CV, and Contact. Each page has a matching Traditional Chinese version in `zh-tw/`.
 
 ## Easy configuration
 
