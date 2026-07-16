@@ -225,6 +225,120 @@
   padding-top: 20px;
   margin-bottom: 0;
 }
+.about-profile {
+  display: grid;
+  grid-template-columns: minmax(220px, 340px) 1fr;
+  gap: 55px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.about-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 10px;
+  object-fit: cover;
+  background: var(--soft);
+  box-shadow: 0 16px 38px rgba(26, 31, 58, 0.12);
+}
+.team-group + .team-group {
+  margin-top: 90px;
+}
+.person-card {
+  padding: 0;
+  overflow: hidden;
+}
+.person-photo {
+  display: grid;
+  height: 250px;
+  place-items: center;
+  background: var(--dark2);
+  color: white;
+  font: 600 3rem var(--serif);
+}
+.person-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.person-card-body,
+.content-card-body {
+  padding: 28px;
+}
+.person-card-body h3,
+.content-card-body h3 {
+  margin: 14px 0 5px;
+}
+.person-org {
+  color: var(--red) !important;
+  font-size: 0.82rem !important;
+  font-weight: 700;
+}
+.person-links,
+.content-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+.content-card {
+  padding: 0;
+  overflow: hidden;
+}
+.content-image {
+  display: block;
+  height: 210px;
+  overflow: hidden;
+  border: 0;
+  background: var(--dark2);
+}
+.content-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.content-card:hover .content-image img {
+  transform: scale(1.04);
+}
+.content-image-placeholder {
+  background-image:
+    linear-gradient(120deg, transparent 45%, rgba(211, 49, 58, 0.25)),
+    linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size:
+    auto,
+    28px 28px,
+    28px 28px;
+}
+.content-article {
+  max-width: 820px;
+  margin: auto;
+}
+.content-article h1 {
+  font-size: clamp(2.6rem, 6vw, 5rem);
+}
+.content-lead {
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+.content-hero-image {
+  width: 100%;
+  max-height: 560px;
+  margin: 35px 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.media-embed {
+  margin: 35px 0;
+}
+@media (max-width: 800px) {
+  .about-profile {
+    grid-template-columns: 1fr;
+  }
+  .about-photo {
+    max-width: 360px;
+  }
+}
 @media (max-width: 800px) {
   .detail-grid {
     grid-template-columns: 1fr;

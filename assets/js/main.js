@@ -39,6 +39,9 @@ document.querySelectorAll("[data-research-interests]").forEach((container) => {
     .map((interest) => `<span>${interest}</span>`)
     .join("");
 });
+document.querySelectorAll("[data-profile-photo]").forEach((image) => {
+  image.src = config.profilePhoto;
+});
 requestAnimationFrame(() => document.body.classList.add("is-ready"));
 const progress = document.createElement("div");
 progress.className = "scroll-progress";

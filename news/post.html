@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Research Topic — Brandon Chen</title>
+    <title>News — Brandon Chen</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/animations.css" />
     <link rel="stylesheet" href="../assets/css/details.css" />
@@ -13,18 +13,20 @@
       <div class="header-inner">
         <a class="brand" href="../index.html">
           <span class="mark">BC</span>
-          <span class="wordmark">
-            <b>Brandon Chen</b>
-            <small>POSITIONING · NAVIGATION · TRANSPORT</small>
-          </span>
+          <span class="wordmark"
+            ><b>Brandon Chen</b
+            ><small>POSITIONING · NAVIGATION · TRANSPORT</small></span
+          >
         </a>
         <button class="menu">Menu</button>
         <nav class="nav">
           <a href="../index.html">Home</a>
-          <a href="../about.html">About</a><a href="../team.html">Team</a>
-          <a class="active" href="../research.html">Research</a>
-          <a href="../projects.html">Projects</a><a href="../news.html">News</a
-          ><a href="../media.html">Media</a>
+          <a href="../about.html">About</a>
+          <a href="../team.html">Team</a>
+          <a href="../research.html">Research</a>
+          <a href="../projects.html">Projects</a>
+          <a class="active" href="../news.html">News</a>
+          <a href="../media.html">Media</a>
           <a href="../portfolio.html">Portfolio</a>
           <a href="../cv.html">CV</a>
           <a href="../contact.html">Contact</a>
@@ -32,11 +34,8 @@
       </div>
     </header>
     <main>
-      <section class="page-hero">
-        <div class="container" data-detail-hero></div>
-      </section>
-      <section class="detail-shell">
-        <div class="container" data-detail></div>
+      <section class="section">
+        <div class="container" data-content-detail="news"></div>
       </section>
     </main>
     <footer class="footer">
@@ -48,13 +47,9 @@
         <span>© <span data-year></span> Brandon Chen</span>
       </div>
     </footer>
-    <script>
-      const topic = new URLSearchParams(window.location.search).get("topic");
-      document.body.dataset.detailKey = `research/${topic || "urban-gnss"}`;
-    </script>
     <script src="../assets/js/site-config.js"></script>
-    <script src="../assets/js/research-data.js"></script>
-    <script src="../assets/js/detail-data.js"></script>
+    <script src="../assets/js/content-data.js"></script>
+    <script src="../assets/js/content-detail.js"></script>
     <script src="../assets/js/main.js"></script>
   </body>
 </html>

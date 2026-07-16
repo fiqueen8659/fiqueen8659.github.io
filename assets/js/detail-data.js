@@ -76,7 +76,7 @@ window.DETAILS = {
     title: "Stairio",
     eyebrow: "ROBOTICS · ACTIVE",
     subtitle:
-      "An autonomous staircase inspection platform combining locomotion, perception and practical deployment. https://stairio.io/",
+      "An autonomous staircase inspection platform combining locomotion, perception and practical deployment.",
     tags: ["robotics", "hardware", "inspection", "GNSS-denied"],
     overview:
       "Stairio is a translational robotics project for routine staircase inspection. Brandon contributes to hardware and mechanical components during spring and summer 2026.",

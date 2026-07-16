@@ -6,6 +6,8 @@ The website is English-only. There are no duplicate language pages to maintain.
 
 Edit `assets/js/site-config.js` to change your name, email, profile links, taglines, site address, or colours.
 
+Set `profilePhoto` to your photograph. You can use an online image URL or add a file such as `assets/images/profile.jpg` and use that path.
+
 ## Main pages
 
 - `index.html` - homepage
@@ -15,6 +17,19 @@ Edit `assets/js/site-config.js` to change your name, email, profile links, tagli
 - `portfolio.html` - portfolio
 - `cv.html` - browser CV
 - `contact.html` - contact page
+
+## Team and supervisors
+
+Edit `assets/js/team-data.js`. Copy a complete person object and set `role` to `"supervisor"` or `"member"`. Add a photo URL/path, position, organisation, interests, biography, website, and email.
+
+## News posts and media cards
+
+Edit `assets/js/content-data.js`.
+
+- Add news inside `NEWS_POSTS`.
+- Add presentations, videos, interviews, posters, or coverage inside `MEDIA_ITEMS`.
+
+Copy one complete object and give it a unique `slug`. Its card and full detail page are generated automatically. Add paragraphs by adding quoted lines to the `body` array.
 
 ## Add a research card and detail page
 

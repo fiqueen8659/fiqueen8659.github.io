@@ -2,9 +2,11 @@
 
 An English-only, responsive personal research website using the IPNL source design system: Fraunces, Mulish, IBM Plex Mono, warm ivory, ultramarine, vermilion, and dark indigo.
 
-Main pages: Home, About, Research, Projects, Portfolio, CV, and Contact.
+Main pages: Home, About, Team, Research, Projects, News, Media, Portfolio, CV, and Contact.
 
 Research cards and pages are generated from `assets/js/research-data.js`. Project pages use `assets/js/detail-data.js`. Shared identity, colours, and the Research Interests list are configured in `assets/js/site-config.js`. Start with `EDIT-HERE.md`.
+
+Team members are generated from `assets/js/team-data.js`. News and Media cards and posts are generated from `assets/js/content-data.js`.
 
 ## Publish
 
