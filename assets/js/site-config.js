@@ -7,7 +7,16 @@ window.SITE_CONFIG = {
   email: "chen.brandon1213@gmail.com",
   linkedin: "https://www.linkedin.com/in/brandon-chen-gnss/",
   orcid: "https://orcid.org/0009-0007-6761-0259",
-  tagline: "POSITIONING · NAVIGATION · TIMING",
+  tagline: "POSITIONING · NAVIGATION · TRANSPORT",
+  /* Edit this list to change the Research Interests section on About. */
+  researchInterests: [
+    "Urban GNSS",
+    "3DMA GNSS",
+    "Factor Graph Optimization",
+    "Resilient Navigation",
+    "Intelligent Transport",
+    "Robotics",
+  ],
   colours: {
     accent: "#2D3B97",
     red: "#D3313A",

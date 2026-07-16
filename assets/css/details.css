@@ -212,6 +212,19 @@
   font-family: var(--serif);
   font-size: 1.1rem;
 }
+.research-card {
+  display: flex;
+  min-height: 310px;
+  flex-direction: column;
+}
+.research-card h3 {
+  margin-top: 32px;
+}
+.research-card-tags {
+  margin-top: auto;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
 @media (max-width: 800px) {
   .detail-grid {
     grid-template-columns: 1fr;

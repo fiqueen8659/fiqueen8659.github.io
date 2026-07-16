@@ -4,7 +4,7 @@ An English-only, responsive personal research website using the IPNL source desi
 
 Main pages: Home, About, Research, Projects, Portfolio, CV, and Contact.
 
-Individual research and project pages are driven by `assets/js/detail-data.js`. Shared identity and colours are configured in `assets/js/site-config.js`. Start with `EDIT-HERE.md`.
+Research cards and pages are generated from `assets/js/research-data.js`. Project pages use `assets/js/detail-data.js`. Shared identity, colours, and the Research Interests list are configured in `assets/js/site-config.js`. Start with `EDIT-HERE.md`.
 
 ## Publish
 

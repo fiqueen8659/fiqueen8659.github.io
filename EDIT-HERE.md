@@ -16,9 +16,32 @@ Edit `assets/js/site-config.js` to change your name, email, profile links, tagli
 - `cv.html` - browser CV
 - `contact.html` - contact page
 
-## Research and project subpages
+## Add a research card and detail page
 
-Edit the English (`en`) fields in `assets/js/detail-data.js`. Each entry contains its title, summary, tags, overview, challenge, methods, metadata, and related pages.
+Edit `assets/js/research-data.js`.
+
+Copy one complete topic object inside `RESEARCH_TOPICS`, paste it after another object, and change:
+
+- `slug` - unique lowercase URL name, such as `ppp-rtk`
+- `title` - card and page title
+- `label` - small category label
+- `summary` - card summary and page introduction
+- `tags` - keyword pills
+- `overview` and `challenge` - detail-page text
+- `methods` - four animated method boxes
+- `related` - links to other research or projects
+
+The card and its full detail page are created automatically. You do not create another HTML file.
+
+3DMA GNSS and Factor Graph Optimization are included as editable examples.
+
+## Edit the Research Interests list
+
+Edit `researchInterests` in `assets/js/site-config.js`. This list appears on the About page.
+
+## Edit project subpages
+
+Project details remain in `assets/js/detail-data.js`.
 
 ## PDF CV
 

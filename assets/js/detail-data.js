@@ -130,13 +130,27 @@ window.DETAILS = {
     related: ["projects/urban-gnss-research", "research/intelligent-transport"],
   },
 };
+
+/* Research topics are merged automatically from research-data.js. */
+(window.RESEARCH_TOPICS || []).forEach((topic, index) => {
+  window.DETAILS[`research/${topic.slug}`] = {
+    ...topic,
+    eyebrow: `RESEARCH PILLAR ${String(index + 1).padStart(2, "0")}`,
+    subtitle: topic.summary,
+  };
+});
+
 (function () {
   const d = DETAILS[document.body.dataset.detailKey];
   if (!d) return;
   const name = (k) => DETAILS[k]?.title || k;
+  const link = (k) =>
+    k.startsWith("research/")
+      ? `../research/topic.html?topic=${encodeURIComponent(k.slice(9))}`
+      : `../${k}.html`;
   document.title = d.title + " — Brandon Chen";
   document.querySelector("[data-detail-hero]").innerHTML =
     `<div class="eyebrow">${d.eyebrow}</div><h1>${d.title}</h1><p>${d.subtitle}</p>`;
   document.querySelector("[data-detail]").innerHTML =
-    `<div class="detail-grid"><nav class="section-nav" data-section-nav><a href="#overview">Overview</a><a href="#challenge">Challenge</a><a href="#methods">Methods</a><a href="#related">Related</a></nav><article class="detail-content"><div class="kv">${d.tags.map((x) => `<span>${x}</span>`).join("")}</div>${d.meta ? `<div class="meta-panel"><div><b>STATUS</b>${d.meta.status}</div><div><b>PERIOD</b>${d.meta.period}</div><div><b>ROLE</b>${d.meta.role}</div></div>` : ""}<div class="tech-figure"></div><section class="detail-section" id="overview"><h2>Overview</h2><p>${d.overview}</p></section><section class="detail-section" id="challenge"><h2>The challenge</h2><p>${d.challenge}</p><div class="accordion"><details><summary>Why does it matter?</summary><p>${d.subtitle}</p></details><details><summary>Scope of work</summary><p>${d.methods.join(" · ")}</p></details></div></section><section class="detail-section" id="methods"><h2>Methods & workflow</h2><div class="pnt-stack" data-pnt-viz>${d.methods.map((x, i) => `<div class="pnt-node${i === 0 ? " is-active" : ""}"><b>0${i + 1}</b><strong>${x}</strong></div>`).join("")}</div><div data-tabs><div class="tab-buttons"><button class="tab-btn is-active" data-tab="measure">Measure</button><button class="tab-btn" data-tab="analyse">Analyse</button><button class="tab-btn" data-tab="validate">Validate</button></div><div class="tab-panel is-active" data-panel="measure">Collect and inspect raw data, sensor outputs, and experimental context.</div><div class="tab-panel" data-panel="analyse">Build reproducible analysis that identifies environmental effects and system limits.</div><div class="tab-panel" data-panel="validate">Test conclusions against references, repeated trials, and clear documentation.</div></div></section><section class="detail-section" id="related"><h2>Related research & projects</h2><div class="related-grid">${d.related.map((k) => `<a class="related-card" href="../${k}.html"><b>${name(k)}</b><br><span>View details →</span></a>`).join("")}</div></section></article></div>`;
+    `<div class="detail-grid"><nav class="section-nav" data-section-nav><a href="#overview">Overview</a><a href="#challenge">Challenge</a><a href="#methods">Methods</a><a href="#related">Related</a></nav><article class="detail-content"><div class="kv">${d.tags.map((x) => `<span>${x}</span>`).join("")}</div>${d.meta ? `<div class="meta-panel"><div><b>STATUS</b>${d.meta.status}</div><div><b>PERIOD</b>${d.meta.period}</div><div><b>ROLE</b>${d.meta.role}</div></div>` : ""}<div class="tech-figure"></div><section class="detail-section" id="overview"><h2>Overview</h2><p>${d.overview}</p></section><section class="detail-section" id="challenge"><h2>The challenge</h2><p>${d.challenge}</p><div class="accordion"><details><summary>Why does it matter?</summary><p>${d.subtitle}</p></details><details><summary>Scope of work</summary><p>${d.methods.join(" · ")}</p></details></div></section><section class="detail-section" id="methods"><h2>Methods & workflow</h2><div class="pnt-stack" data-pnt-viz>${d.methods.map((x, i) => `<div class="pnt-node${i === 0 ? " is-active" : ""}"><b>0${i + 1}</b><strong>${x}</strong></div>`).join("")}</div><div data-tabs><div class="tab-buttons"><button class="tab-btn is-active" data-tab="measure">Measure</button><button class="tab-btn" data-tab="analyse">Analyse</button><button class="tab-btn" data-tab="validate">Validate</button></div><div class="tab-panel is-active" data-panel="measure">Collect and inspect raw data, sensor outputs, and experimental context.</div><div class="tab-panel" data-panel="analyse">Build reproducible analysis that identifies environmental effects and system limits.</div><div class="tab-panel" data-panel="validate">Test conclusions against references, repeated trials, and clear documentation.</div></div></section><section class="detail-section" id="related"><h2>Related research & projects</h2><div class="related-grid">${d.related.map((k) => `<a class="related-card" href="${link(k)}"><b>${name(k)}</b><br><span>View details →</span></a>`).join("")}</div></section></article></div>`;
 })();

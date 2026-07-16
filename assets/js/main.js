@@ -34,6 +34,11 @@ document
 document
   .querySelectorAll("[data-year]")
   .forEach((e) => (e.textContent = new Date().getFullYear()));
+document.querySelectorAll("[data-research-interests]").forEach((container) => {
+  container.innerHTML = (config.researchInterests || [])
+    .map((interest) => `<span>${interest}</span>`)
+    .join("");
+});
 requestAnimationFrame(() => document.body.classList.add("is-ready"));
 const progress = document.createElement("div");
 progress.className = "scroll-progress";

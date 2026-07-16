@@ -10,9 +10,13 @@ Edit `assets/js/site-config.js` to change the name, initials, site URL, email, L
 
 The seven main pages are ordinary HTML files in the site root. See `EDIT-HERE.md` for the exact file map.
 
-## Research and project content
+## Research content
 
-Edit `assets/js/detail-data.js`. It is the single English content source for all individual research and project subpages.
+Edit `assets/js/research-data.js`. Adding one topic object automatically creates both its card and detail page. Research interests are listed in `assets/js/site-config.js`.
+
+## Project content
+
+Edit the project entries in `assets/js/detail-data.js`.
 
 ## CV
 
