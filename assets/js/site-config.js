@@ -12,6 +12,6 @@ window.SITE_CONFIG = {
     accent: "#2D3B97",
     red: "#D3313A",
     background: "#FAF7F1",
-    dark: "#161B40"
-  }
+    dark: "#161B40",
+  },
 };
