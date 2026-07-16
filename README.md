@@ -1,6 +1,12 @@
 # Brandon Chen — GitHub Pages
 
-A responsive bilingual personal research website inspired by the visual language of IPNL and qmohsu.github.io, with original branding and content for Brandon Chen.
+A responsive bilingual, multi-page personal research website using the source design system of IPNL/qmohsu.github.io: Fraunces, Mulish and IBM Plex Mono; warm ivory, ultramarine, vermilion and dark indigo.
+
+Pages: Home, About, Research, Projects, and Contact. Each page has a matching Traditional Chinese version in `zh-tw/`.
+
+## Easy configuration
+
+Edit `assets/js/site-config.js` to change the shared name, initials, email, social links, bilingual tagline, and brand colours. See `CONFIGURE.md` for the complete guide.
 
 ## Publish
 
