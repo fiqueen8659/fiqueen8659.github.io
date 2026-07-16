@@ -12,7 +12,7 @@ window.SITE_CONFIG = {
   researchInterests: [
     "Urban GNSS",
     "3DMA GNSS",
-    "Factor Graph Optimization",
+    "AI/ML GNSS",
     "Resilient Navigation",
     "Intelligent Transport",
     "Robotics",
