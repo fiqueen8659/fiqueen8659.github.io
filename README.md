@@ -4,6 +4,8 @@ A responsive bilingual, multi-page personal research website using the source de
 
 Pages: Home, About, Research, Projects, Portfolio, CV, and Contact. Each page has a matching Traditional Chinese version in `zh-tw/`.
 
+Research and project listings link to data-driven bilingual subpages. Their content is configured in `assets/js/detail-data.js`; the shared subpage design is in `assets/css/details.css`.
+
 ## Easy configuration
 
 Edit `assets/js/site-config.js` to change the shared name, initials, email, social links, bilingual tagline, and brand colours. See `CONFIGURE.md` for the complete guide.
